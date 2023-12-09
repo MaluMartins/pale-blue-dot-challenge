@@ -11,3 +11,8 @@ body {
 h3.w3-bar-item {
     font-weight: 700;
 }
+
+img {
+    width: 50%; 
+    height: 50%;
+}
