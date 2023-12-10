@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <body>
     
@@ -16,5 +17,64 @@
     <a href="index.html" class="w3-bar-item w3-button">Dashboard</a>
     <a href="docs.html" class="w3-bar-item w3-button">Docs</a>
 </div>
+
+<div class="content" style="margin-left: 16%; padding: 1em">
+    <div class="w3-container">
+        <div class="row">
+            <div class="col-8 pe-4 h-100 flex-column align-items-stretch">
+                <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0">
+                  <div id="item-1">
+                    <h3>What is the Pale Blue Dot Challenge?</h3>
+                    <p>The <a href="https://www.drivendata.org/competitions/256/pale-blue-dot/page/802/">Pale Blue Dot Challenge</a> is a Nasa and Driven Data competition with the purpose to leverage open science and to make Earth observation data available to all.</p>
+                  </div>
+                  <div id="item-1-1">
+                    <h5>The goal of the Pale Blue Dot Challenge</h5>
+                    <p>The goal for the challenge is to create a visualization using Earth observation data that advances at least one of the following Sustainable Development Goals (SDGs): Zero Hunger, Clean Water and Sanitation, Climate Action</p>
+                  </div>
+                  <div id="item-2">
+                    <h3>About our project</h3>
+                    <p>Our group chose to create a visualization through a dashboard with data about the Climate Actions. Our goal is to relate factors like extreme heat, greenhouse gases emissions and deflorestation.</p>
+                  </div>
+                  <div id="item-2-1">
+                    <h5>Data fonts used in this project</h5>
+                    <p>The main data font used in this project is the <a href="https://www.earthdata.nasa.gov/technology/giovanni">Giovanni</a> system from NASA, wich gathers geophysical data from many satellites and space probes, like AIRS and Landsat.</p>
+                  </div>
+                  <div id="item-2-2">
+                    <h5>Tools used in this project</h5>
+                    <p>The main tool used to build the dashboard for this project is the Python programming language. In addition to this, tools like the Pandas library for data analysis and Plotly for creating graphs.</p>
+                  </div>
+                  <div id="item-3">
+                    <h3>How to make use of this dashboard</h3>
+                    <p>This dashboard contains data about the main climate changes and actions through the latest years. With it, you can gather information about human action relates to the main climate changes and determine its causes and consequences.</p>
+                  </div>
+                  <div id="item-3-1">
+                    <h5>How to access the source code of this project</h5>
+                    <p>The source code for this dashboard and all the data used is in this <a href="https://github.com/MaluMartins/pale-blue-dot-challenge">Github repository.</a></p>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+            <div class="col-4">
+                <nav id="navbar-example3">
+                <nav class="nav nav-pills flex-column">
+                    <a class="nav-link" href="#item-1">What is the Pale Blue Dot Challenge?</a>
+                    <nav class="nav nav-pills flex-column">
+                    <a class="nav-link ms-3 my-1" href="#item-1-1">The goal of the Pale Blue Dot Challenge</a>
+                    </nav>
+                    <a class="nav-link" href="#item-2">About our project</a>
+                    <a class="nav-link ms-3 my-1" href="#item-2-1">Data fonts used in this project</a>
+                    <a class="nav-link ms-3 my-1" href="#item-2-2">Tools used in this project</a>
+                    <a class="nav-link" href="#item-3">How to make use of this dashboard</a>
+                    <nav class="nav nav-pills flex-column">
+                    <a class="nav-link ms-3 my-1" href="#item-3-1">How to access the source code of this project</a>
+                    </nav>
+                </nav>
+                </nav>
+            </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

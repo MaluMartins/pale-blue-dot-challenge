@@ -6,6 +6,12 @@ body {
 .w3-sidebar {
     background-color: rgb(41, 41, 109)!important;
     color: white!important;
+    padding: 1.5em;
+}
+
+.w3-container {
+    display: flex;
+    justify-content: space-around;
 }
 
 h3.w3-bar-item {
