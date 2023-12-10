@@ -10,4 +10,4 @@ data['Time'] = pd.to_datetime(data['Time'])
 data['Mean AIRS Methane'] = pd.to_numeric(data['Mean AIRS Methane'])
 
 figCH4 = px.line(data, x="Time", y="Mean AIRS Methane")
-figCH4.write_html("C:\\pale-blue-dot-challenge\\src\\figures")
+figCH4.write_html("C:\\pale-blue-dot-challenge\\src\\figures\\ch4.html")
