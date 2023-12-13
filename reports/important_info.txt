@@ -1,0 +1,5 @@
+Giovanni coords for area covered: -175,-60,172.5,86 (whole world)
+
+UNITS OF MEASURES USED
+PPM: Part per million
+PPB: Parte per billion
