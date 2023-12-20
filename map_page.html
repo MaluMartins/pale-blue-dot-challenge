@@ -21,24 +21,34 @@
 <div class="content" style="margin-left: 16%; padding: 1em">
     <ul class="nav nav-tabs">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Active</a>
+          <a id="lsLink" class="nav-link active" aria-current="page" href="#landsat_map" onclick="toggleLS()">Surfaces</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a id="tempLink" class="nav-link" href="#temp_map" onclick="toggleTemp()">Temperature</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a id="nvdiLink" class="nav-link" href="#nvdi_map" onclick="toggleNVDI()">Vegetation</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          <a id="smLink" class="nav-link" href="#sm_map" onclick="toggleSM()">Soil Moisture</a>
         </li>
       </ul>
-      
-    <div class="map">
-        <iframe src="./src/figures/map.html" height="600px" width="100%" frameborder="0"></iframe>
+
+    <div id="landsat_map" class="map">
+        <iframe src="./src/figures/landsat_map.html" height="600px" width="100%" frameborder="0"></iframe>
+    </div>      
+    <div id="temp_map" class="map" style="display: none">
+        <iframe src="./src/figures/temp_map.html" height="600px" width="100%" frameborder="0"></iframe>
+    </div>      
+    <div id="nvdi_map" class="map" style="display: none">
+        <iframe src="./src/figures/nvdi_map.html" height="600px" width="100%" frameborder="0"></iframe>
+    </div>      
+    <div id="sm_map" class="map" style="display: none">
+        <iframe src="./src/figures/sm_map.html" height="600px" width="100%" frameborder="0"></iframe>
     </div>
 </div>
 
+<script src="maps.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
