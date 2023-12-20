@@ -18,16 +18,18 @@ def create_landsat_image(file_dir, file_name):
         'max': 0.3,
     }
 
-    #Landsat 9 images
-    dataset_ls9 = ee.ImageCollection('LANDSAT/LC09/C02/T1_L2').filterDate(
-        '2022-01-01', '2022-02-01'
+    #Landsat 8 images
+    dataset_ls8 = ee.ImageCollection('LANDSAT/LC08/C02/T1_L2').filterDate(
+        '2021-05-01', '2021-06-01'
     )
 
-    map_ls9 = geemap.Map()
-    map_ls9.set_center(-114.2579, 38.9275, 8)
-    map_ls9.add_layer(dataset_ls9, landsat_visualization, 'True Color (432)')
+    dataset_ls8 = dataset_ls8.map(apply_scale_factors)
 
-    map_ls9.save(f"{file_dir}/{file_name}")
+    map_ls8 = geemap.Map()
+    map_ls8.set_center(-114.2579, 38.9275, 8)
+    map_ls8.add_layer(dataset_ls8, landsat_visualization, 'True Color (432)')
+
+    map_ls8.save(f"{file_dir}/{file_name}")
 
 def create_temp_map(file_dir, file_name):
     # ERA5 Monthly Aggregates - Latest Climate Reanalysis Produced by ECMWF / Copernicus Climate Change Service
@@ -96,6 +98,6 @@ def create_nvdi_map(file_dir, file_name):
 file_dir = "C:/pale-blue-dot-challenge/src/figures"
 
 create_landsat_image(file_dir, "landsat_map.html")
-create_temp_map(file_dir, "temp_map.html")
-create_soil_moisture_map(file_dir, "sm_map.html")
-create_nvdi_map(file_dir, "nvdi_map.html")
+# create_temp_map(file_dir, "temp_map.html")
+# create_soil_moisture_map(file_dir, "sm_map.html")
+# create_nvdi_map(file_dir, "nvdi_map.html")
