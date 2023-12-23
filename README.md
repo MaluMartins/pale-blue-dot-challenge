@@ -26,6 +26,6 @@ The scripts to generate maps and charts are available at ```/src```.
 The data analyzed and used to generate the charts is available in csv format files, at ```/data```.
 
 Data fonts:
-Tables/csv files: [NASA's Giovanni System](https://giovanni.gsfc.nasa.gov/giovanni/).
-Maps: [Earth Engine Data Catalog](https://developers.google.com/earth-engine/datasets/catalog/).
+* Tables/csv files: [NASA's Giovanni System](https://giovanni.gsfc.nasa.gov/giovanni/).
+* Maps: [Earth Engine Data Catalog](https://developers.google.com/earth-engine/datasets/catalog/).
 
