@@ -98,6 +98,6 @@ def create_nvdi_map(file_dir, file_name):
 file_dir = "C:/pale-blue-dot-challenge/src/figures"
 
 create_landsat_image(file_dir, "landsat_map.html")
-# create_temp_map(file_dir, "temp_map.html")
-# create_soil_moisture_map(file_dir, "sm_map.html")
-# create_nvdi_map(file_dir, "nvdi_map.html")
+create_temp_map(file_dir, "temp_map.html")
+create_soil_moisture_map(file_dir, "sm_map.html")
+create_nvdi_map(file_dir, "nvdi_map.html")
