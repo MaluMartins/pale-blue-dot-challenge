@@ -19,6 +19,8 @@ The map page contain the geographic representation for the data contained in the
 The docs page contains important information about the challenge, the project and the data analysis process.
 
 ## Data analysis process code
+The data analysis process is documented at ```/notebooks```.
+
 ### Scripts
 The scripts to generate maps and charts are available at ```/src```.
 
