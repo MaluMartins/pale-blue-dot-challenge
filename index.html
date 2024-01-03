@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pale Blue Dot Challenge</title>
+    <title>Planet Pioneers</title>
 
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -12,39 +12,40 @@
     
 <!-- Sidebar -->
 <div class="w3-sidebar w3-bar-block" style="width:15%">
-    <h3 class="w3-bar-item">Pale Blue Dot Challenge</h3>
+    <h3 class="w3-bar-item">Planet Pioneers</h3>
     <a href="index.html" class="w3-bar-item w3-button">Dashboard</a>
     <a href="map_page.html" class="w3-bar-item w3-button">Map</a>
     <a href="docs.html" class="w3-bar-item w3-button">Docs</a>
 </div>
 <div class="content" style="margin-left: 16%; padding: 1em">
+    <h1>Extreme heat related data dashboard</h1>
     <div class="chart-box">
-        <h3>Greenhouse gases emissions through the latest years</h3>
+        <h3>Surface Temperature</h3>
         <div class="flex">
-            <iframe src="./src/figures/ch4.html" height="300px" width="400px" frameborder="0"></iframe>
-            <iframe src="./src/figures/co2.html" height="300px" width="400px" frameborder="0"></iframe>
-            <iframe src="./src/figures/o3.html" height="300px" width="400px" frameborder="0"></iframe>
-        </div>
-    </div>
-
-    <div class="flex">
-        <div class="chart-box">
-            <h3>Air temperature average</h3>
-            <iframe src="./src/figures/temp_celsius.html" height="400px" width="530px" frameborder="0"></iframe>
-        </div>
-        <div class="chart-box">
-            <h3>Soil moisture average</h3>
-            <iframe src="./src/figures/soil_moisture.html" height="400px" width="530px" frameborder="0"></iframe>
+            <iframe src="./src/figures/SurfTemp.html" height="300px" width="400px" frameborder="0"></iframe>
+            <img src="./src/figures/SurfTemp_map.png" height="300px" width="400px"></img>
+            <img src="./src/figures/SurfTemp_anim.gif" height="300px" width="400px"></img>
         </div>
     </div>
 
     <div class="chart-box">
-        <h3>Vegetation</h3>
+        <h3>Air Temperature at surface</h3>
         <div class="flex">
-            <iframe src="./src/figures/veg_grn.html" height="400px" width="600px" frameborder="0"></iframe>
-            <iframe src="./src/figures/veg_lai.html" height="400px" width="600px" frameborder="0"></iframe>
+            <iframe src="./src/figures/SurfAirTemp.html" height="300px" width="400px" frameborder="0"></iframe>
+            <img src="./src/figures/SurfAirTemp_map.png" height="300px" width="400px"></img>
+            <img src="./src/figures/SurfAirTemp_anim.gif" height="300px" width="400px"></img>
         </div>
     </div>
+
+    <div class="chart-box">
+        <h3>Relative Humidity</h3>
+        <div class="flex">
+            <iframe src="./src/figures/RelHum.html" height="300px" width="400px" frameborder="0"></iframe>
+            <img src="./src/figures/relHum_time_average_map.png" height="300px" width="400px"></img>
+            <img src="./src/figures/relHum_anim.gif" height="300px" width="400px"></img>
+        </div>
+    </div>
+    
 </div>
 
 </body>
