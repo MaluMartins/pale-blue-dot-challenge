@@ -4,9 +4,9 @@
     font-family: 'Nunito'!important;
 }
 
-body {
-    width: 100%;
-    height: 100%;
+body, html {
+    width: 100%!important;
+    height: 100%!important;
 }
 
 .w3-sidebar {
@@ -37,3 +37,4 @@ h3.w3-bar-item {
     align-items: center;
     justify-content: center;
 }
+

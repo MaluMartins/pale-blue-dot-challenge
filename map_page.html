@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pale Blue Dot Challenge</title>
+    <title>Planet Pioneers</title>
 
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -13,38 +13,14 @@
     
 <!-- Sidebar -->
 <div class="w3-sidebar w3-bar-block" style="width:15%">
-    <h3 class="w3-bar-item">Pale Blue Dot Challenge</h3>
+    <h3 class="w3-bar-item">Planet Pioneers</h3>
     <a href="index.html" class="w3-bar-item w3-button">Dashboard</a>
     <a href="map_page.html" class="w3-bar-item w3-button">Map</a>
     <a href="docs.html" class="w3-bar-item w3-button">Docs</a>
 </div>
-<div class="content" style="margin-left: 16%; padding: 1em">
-    <ul class="nav nav-tabs">
-        <li class="nav-item">
-          <a id="lsLink" class="nav-link active" aria-current="page" href="#landsat_map" onclick="toggleLS()">Surfaces</a>
-        </li>
-        <li class="nav-item">
-          <a id="tempLink" class="nav-link" href="#temp_map" onclick="toggleTemp()">Temperature</a>
-        </li>
-        <li class="nav-item">
-          <a id="nvdiLink" class="nav-link" href="#nvdi_map" onclick="toggleNVDI()">Vegetation</a>
-        </li>
-        <li class="nav-item">
-          <a id="smLink" class="nav-link" href="#sm_map" onclick="toggleSM()">Soil Moisture</a>
-        </li>
-      </ul>
-
-    <div id="landsat_map" class="map">
-        <iframe src="./src/figures/landsat_map.html" height="600px" width="100%" frameborder="0"></iframe>
-    </div>      
-    <div id="temp_map" class="map" style="display: none">
-        <iframe src="./src/figures/temp_map.html" height="600px" width="100%" frameborder="0"></iframe>
-    </div>      
-    <div id="nvdi_map" class="map" style="display: none">
-        <iframe src="./src/figures/nvdi_map.html" height="600px" width="100%" frameborder="0"></iframe>
-    </div>      
-    <div id="sm_map" class="map" style="display: none">
-        <iframe src="./src/figures/sm_map.html" height="600px" width="100%" frameborder="0"></iframe>
+<div class="content" style="margin-left: 16%;">
+    <div class="map">
+        <iframe src="./src/figures/modis_temp_map.html" height="700px" width="100%" frameborder="0"></iframe>
     </div>
 </div>
 
